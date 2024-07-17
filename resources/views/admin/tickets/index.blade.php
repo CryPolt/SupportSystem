@@ -64,7 +64,7 @@ let filters = `
 <form class="form-inline" id="filtersForm">
   <div class="form-group mx-sm-3 mb-2">
     <select class="form-control" name="status">
-      <option value="">All statuses</option>
+      <option value="">Все статусы</option>
       @foreach($statuses as $status)
         <option value="{{ $status->id }}"{{ request('status') == $status->id ? 'selected' : '' }}>{{ $status->name }}</option>
       @endforeach
@@ -72,7 +72,7 @@ let filters = `
   </div>
   <div class="form-group mx-sm-3 mb-2">
     <select class="form-control" name="priority">
-      <option value="">All priorities</option>
+      <option value="">Все приоритеты</option>
       @foreach($priorities as $priority)
         <option value="{{ $priority->id }}"{{ request('priority') == $priority->id ? 'selected' : '' }}>{{ $priority->name }}</option>
       @endforeach
@@ -80,7 +80,7 @@ let filters = `
   </div>
   <div class="form-group mx-sm-3 mb-2">
     <select class="form-control" name="category">
-      <option value="">All categories</option>
+      <option value="">Все категории</option>
       @foreach($categories as $category)
         <option value="{{ $category->id }}"{{ request('category') == $category->id ? 'selected' : '' }}>{{ $category->name }}</option>
       @endforeach
@@ -140,31 +140,31 @@ $('.card-body').on('change', 'select', function() {
 { data: 'id', name: 'id' },
 {
     data: 'title',
-    name: 'title', 
+    name: 'title',
     render: function ( data, type, row) {
         return '<a href="'+row.view_link+'">'+data+' ('+row.comments_count+')</a>';
     }
 },
-{ 
-  data: 'status_name', 
-  name: 'status.name', 
+{
+  data: 'status_name',
+  name: 'status.name',
   render: function ( data, type, row) {
       return '<span style="color:'+row.status_color+'">'+data+'</span>';
   }
 },
-{ 
-  data: 'priority_name', 
-  name: 'priority.name', 
+{
+  data: 'priority_name',
+  name: 'priority.name',
   render: function ( data, type, row) {
       return '<span style="color:'+row.priority_color+'">'+data+'</span>';
   }
 },
-{ 
-  data: 'category_name', 
-  name: 'category.name', 
+{
+  data: 'category_name',
+  name: 'category.name',
   render: function ( data, type, row) {
       return '<span style="color:'+row.category_color+'">'+data+'</span>';
-  } 
+  }
 },
 { data: 'author_name', name: 'author_name' },
 { data: 'author_email', name: 'author_email' },
@@ -173,7 +173,7 @@ $('.card-body').on('change', 'select', function() {
     ],
     order: [[ 1, 'desc' ]],
     pageLength: 100,
-  };    
+  };
 $(".datatable-Ticket").one("preInit.dt", function () {
  $(".dataTables_filter").after(filters);
 });
