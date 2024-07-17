@@ -14,7 +14,7 @@ class PrioritiesTableSeeder extends Seeder
     {
         $faker = Faker\Factory::create();
         $priorities = [
-            'Low', 'Medium', 'High'
+            'Низкий', 'Средний', 'Высокий'
         ];
 
         foreach($priorities as $priority)
