@@ -14,14 +14,8 @@ class CategoriesTableSeeder extends Seeder
     {
         $faker = Faker\Factory::create();
         $categories = [
-            "двойная оплата",
-            "разные способы оплаты",
-            "Проблема с QR",
-            "другое",
-            "возврат",
-            "отказ",
-            "СБ",
-            "Проблема с МП"
+            "test category 1",
+            "test category 2",
         ];
 
 
