@@ -21,7 +21,7 @@
                                 <div class="card text-white bg-primary">
                                     <div class="card-body pb-3">
                                         <div class="text-value">{{ number_format($totalTickets) }}</div>
-                                        <div>Total tickets</div>
+                                        <div>Всего тикетов</div>
                                         <br />
                                     </div>
                                 </div>
@@ -31,7 +31,7 @@
                                 <div class="card text-white bg-success">
                                     <div class="card-body pb-3">
                                         <div class="text-value">{{ number_format($openTickets) }}</div>
-                                        <div>Open tickets</div>
+                                        <div>Открытые тикеты</div>
                                         <br />
                                     </div>
                                 </div>
@@ -41,7 +41,7 @@
                                 <div class="card text-white bg-danger">
                                     <div class="card-body pb-3">
                                         <div class="text-value">{{ number_format($closedTickets) }}</div>
-                                        <div>Closed tickets</div>
+                                        <div>Закрытые тикеты</div>
                                         <br />
                                     </div>
                                 </div>
@@ -53,15 +53,15 @@
                             <div class="col-md-12">
                                 <div class="card">
                                     <div class="card-header">
-                                        Tickets by Month
+                                        Тикеты за месяц
                                     </div>
                                     <div class="card-body">
                                         <table class="table table-bordered">
                                             <thead>
                                             <tr>
-                                                <th>Year</th>
-                                                <th>Month</th>
-                                                <th>Count</th>
+                                                <th>Год</th>
+                                                <th>Месяц</th>
+                                                <th>Количество</th>
                                             </tr>
                                             </thead>
                                             <tbody>
@@ -84,16 +84,16 @@
                             <div class="col-md-12">
                                 <div class="card">
                                     <div class="card-header">
-                                        Tickets by Day
+                                        Тикеты за день
                                     </div>
                                     <div class="card-body">
                                         <table class="table table-bordered">
                                             <thead>
                                             <tr>
-                                                <th>Year</th>
-                                                <th>Month</th>
-                                                <th>Day</th>
-                                                <th>Count</th>
+                                                <th>Год</th>
+                                                <th>Месяц</th>
+                                                <th>День</th>
+                                                <th>Количество</th>
                                             </tr>
                                             </thead>
                                             <tbody>
@@ -117,7 +117,7 @@
                             <div class="col-md-12">
                                 <div class="card">
                                     <div class="card-header">
-                                        Tickets by Category (Chart)
+                                        Тикеты по категорям (Chart)
                                     </div>
                                     <div class="card-body">
                                         <canvas id="categoryChart" width="400" height="200"></canvas>
